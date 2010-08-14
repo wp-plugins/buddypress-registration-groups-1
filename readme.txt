@@ -7,6 +7,9 @@ Tested up to: WordPress 3.0 / BuddyPress 1.2.5.2
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/wordpress-plugins/
+Contributors: hardlyneutral
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYJT5VMV8YMVQ
+Stable tag: trunk
 
 WordPress/WordPress MU and BuddyPress. Allows a new user to select groups to join during the registration process.
 
@@ -35,6 +38,9 @@ If you would like to install manually:
 
 Hit me up on my website and let me know. I only do this in my spare time, so don't expect a super quick response :)
 
+== Screenshots ==
+1. Screenshot of the plugin listing three groups on the new user registration page.
+
 == Changelog ==
 
 = 0.3 =
@@ -54,3 +60,8 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 
 = 0.1 =
 * First version!
+
+== Upgrade Notice ==
+
+= 0.3 =
+This version addresses several functionality issues. Upgrade immediately.
