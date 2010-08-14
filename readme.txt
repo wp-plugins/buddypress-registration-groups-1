@@ -28,6 +28,7 @@ The plugin is packaged so that you can use the built in plugin installer in the 
 .zip file and install away! Activate the plugin once it is installed.
 
 If you would like to install manually:
+
 1. Extract the .zip file
 2. Upload the extracted directory and all its contents to the '/wp-content/plugins/' directory
 3. Activate the plugin throught the 'Plugins' menu in WordPress
