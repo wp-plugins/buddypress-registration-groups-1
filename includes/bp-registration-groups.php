@@ -14,7 +14,7 @@ else { add_action( 'bp_core_activated_user', 'bp_registration_groups_join_s' ); 
  * Load CSS for the plugin
  */
 function bp_registration_groups_css(){
-	echo '<link type="text/css" rel="stylesheet" href="' . get_bloginfo('wpurl') .'/wp-content/plugins/bp-registration-groups/includes/styles.css" />' . "\n";
+	echo '<link type="text/css" rel="stylesheet" href="' . plugins_url('/styles.css', __FILE__) . '" />' ."\n";
 }
 
 /* bp_registration_groups
@@ -73,8 +73,11 @@ function bp_registration_groups_join( $user_id, $key, $user ) {
 	
 	$reg_groups = $user['meta']['field_reg_groups'];
 	
-	foreach ($reg_groups as $group_id) {
-		groups_join_group($group_id, $user_id);
+	//only join groups if field_reg_groups contains any groups
+	if ($reg_groups != '') {
+		foreach ($reg_groups as $group_id) {
+			groups_join_group($group_id, $user_id);
+		}
 	}
 		
 }
@@ -87,8 +90,11 @@ function bp_registration_groups_join_s( $user_id ) {
 
 	$reg_groups = get_usermeta( $user_id, 'field_reg_groups' );
 	
-	foreach ($reg_groups as $group_id) {
-		groups_join_group($group_id, $user_id);
+	//only join groups if field_reg_groups contains any groups
+	if ($reg_groups != '') {
+		foreach ($reg_groups as $group_id) {
+			groups_join_group($group_id, $user_id);
+		}
 	}
 	
 	return $user_id;

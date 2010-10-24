@@ -44,6 +44,11 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 
 == Changelog ==
 
+= 0.4 =
+* Replaced static link to plugin .css file with a dynamic one
+* Addressed minor styling issue
+* Addressed error that was being thrown if no groups were selected
+
 = 0.3 =
 * Tested as functional on WordPress 3.0 and BuddyPress 1.2.5.2
 * Tested as functional in both WP3 single and multisite installations
@@ -66,3 +71,6 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 
 = 0.3 =
 This version addresses several functionality issues. Upgrade immediately.
+
+= 0.4 =
+This version addresses a minor styling issue and an error shown on user activation if no groups were selected during registration. Upgrade immediately.
