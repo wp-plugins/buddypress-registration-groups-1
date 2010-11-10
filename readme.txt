@@ -1,6 +1,6 @@
 === BuddyPress Registration Groups ===
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Version: 0.4
+Version: 0.5
 Tags: buddypress, groups, registration, autojoin
 Requires at least: WordPress 2.9.2 or WordPress MU 2.9.2 / BuddyPress 1.2.5.2
 Tested up to: WordPress 3.0.1 / BuddyPress 1.2.5.2
@@ -44,6 +44,9 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 
 == Changelog ==
 
+= 0.5 =
+* Changed group ordering on the registration page to alphabetical
+
 = 0.4 =
 * Replaced static link to plugin .css file with a dynamic one
 * Addressed minor styling issue
@@ -74,3 +77,6 @@ This version addresses several functionality issues. Upgrade immediately.
 
 = 0.4 =
 This version addresses a minor styling issue and an error shown on user activation if no groups were selected during registration. Upgrade immediately.
+
+= 0.5 =
+This version changes the display order of groups on the registration page to alphabetical.
