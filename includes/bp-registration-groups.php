@@ -76,6 +76,7 @@ function bp_registration_groups_join( $user_id, $key, $user ) {
 	//only join groups if field_reg_groups contains any groups
 	if ($reg_groups != '') {
 		foreach ($reg_groups as $group_id) {
+			$bp->groups->current_group = groups_get_group(array('group_id' => $group_id));
 			groups_join_group($group_id, $user_id);
 		}
 	}
@@ -93,6 +94,7 @@ function bp_registration_groups_join_s( $user_id ) {
 	//only join groups if field_reg_groups contains any groups
 	if ($reg_groups != '') {
 		foreach ($reg_groups as $group_id) {
+			$bp->groups->current_group = groups_get_group(array('group_id' => $group_id));
 			groups_join_group($group_id, $user_id);
 		}
 	}
