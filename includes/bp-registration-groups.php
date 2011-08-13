@@ -18,8 +18,8 @@ function bp_registration_groups_css(){
 }
 
 /* bp_registration_groups
- * Add list of public and private groups to registration page. Display a message
- * stating no groups are available if no public or private groups are found.
+ * Add list of public groups to registration page. Display a message
+ * stating no groups are available if no public groups are found.
  */
 function bp_registration_groups(){
 	/* list groups */ ?>
@@ -29,7 +29,7 @@ function bp_registration_groups(){
 			<ul class="reg_groups_list">
 				<?php $i = 0; ?>
 				<?php if ( bp_has_groups('type=alphabetical') ) : while ( bp_groups() ) : bp_the_group(); ?>
-					<?php if ( bp_get_group_status() == ('public' || 'private')) { ?>
+					<?php if ( bp_get_group_status() == ('public')) { ?>
 					<li class="reg_groups_item">
 						<input type="checkbox" id="field_reg_groups_<?php echo $i; ?>" name="field_reg_groups[]" value="<?php bp_group_id(); ?>" /><?php bp_group_name(); ?>
 					</li>

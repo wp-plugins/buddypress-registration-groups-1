@@ -1,9 +1,9 @@
 === BuddyPress Registration Groups ===
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Version: 0.6
+Version: 0.7
 Tags: buddypress, groups, registration, autojoin
-Requires at least: WordPress 2.9.2 or WordPress MU 2.9.2 / BuddyPress 1.2.5.2
-Tested up to: WordPress 3.0.3 / BuddyPress 1.2.7
+Requires at least: WordPress 3.2.1 / BuddyPress 1.2.9
+Tested up to: WordPress 3.2.1 / BuddyPress 1.2.9
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/wordpress-plugins/
@@ -16,8 +16,8 @@ WordPress/WordPress MU and BuddyPress. Allows a new user to select groups to joi
 == Description ==
 
 This plugin is built to display BuddyPress groups on the new user registration page in a list where the user can
-select, via checkbox, which groups they would like to join immediately. Only Public and Private groups are shown;
-no Hidden groups will be available. The selected group's IDs are stored in the following locations:
+select, via checkbox, which groups they would like to join immediately. Only Public groups are shown;
+no Private or Hidden groups will be available. The selected group's IDs are stored in the following locations:
 
 * usermeta table - for WordPress/BuddyPress installations
 * meta field of signups table - for WP3/BuddyPress or WPMU/BuddyPress installations
@@ -43,6 +43,10 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 1. Screenshot of the plugin listing three groups on the new user registration page.
 
 == Changelog ==
+
+= 0.7 =
+* Validated plugin is compatible with WordPress 3.2.1 and BuddyPress 1.2.9
+* Changed default group listing to only show public groups, hidden and private groups are not shown
 
 = 0.6 =
 * Fixed a bug where the timeline would not record group names correctly on join
