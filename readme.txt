@@ -1,9 +1,9 @@
 === BuddyPress Registration Groups ===
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Version: 0.7
+Version: 0.8
 Tags: buddypress, groups, registration, autojoin
-Requires at least: WordPress 3.2.1 / BuddyPress 1.2.9
-Tested up to: WordPress 3.2.1 / BuddyPress 1.2.9
+Requires at least: WordPress 3.2.1 / BuddyPress 1.5
+Tested up to: WordPress 3.2.1 / BuddyPress 1.5
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/wordpress-plugins/
@@ -44,6 +44,10 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 
 == Changelog ==
 
+= 0.8 =
+* Validated plugin is compatible with BuddyPress 1.5
+* Modified plugin listing to remove 20 group limit; limit is now 99999
+
 = 0.7 =
 * Validated plugin is compatible with WordPress 3.2.1 and BuddyPress 1.2.9
 * Changed default group listing to only show public groups, hidden and private groups are not shown
@@ -79,6 +83,9 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 * First version!
 
 == Upgrade Notice ==
+
+= 0.8 =
+This version addresses an issue with only showing 20 groups on the registration page. See Changelog for details.
 
 = 0.3 =
 This version addresses several functionality issues. Upgrade immediately.

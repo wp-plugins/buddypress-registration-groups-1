@@ -28,7 +28,7 @@ function bp_registration_groups(){
 			<p class="reg_groups_description">Check one or more areas of interest:</p>
 			<ul class="reg_groups_list">
 				<?php $i = 0; ?>
-				<?php if ( bp_has_groups('type=alphabetical') ) : while ( bp_groups() ) : bp_the_group(); ?>
+				<?php if ( bp_has_groups('type=alphabetical&per_page=99999') ) : while ( bp_groups() ) : bp_the_group(); ?>
 					<?php if ( bp_get_group_status() == ('public')) { ?>
 					<li class="reg_groups_item">
 						<input type="checkbox" id="field_reg_groups_<?php echo $i; ?>" name="field_reg_groups[]" value="<?php bp_group_id(); ?>" /><?php bp_group_name(); ?>
