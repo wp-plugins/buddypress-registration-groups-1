@@ -1,9 +1,9 @@
 === BuddyPress Registration Groups ===
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Version: 0.8
+Version: 0.9
 Tags: buddypress, groups, registration, autojoin
 Requires at least: WordPress 3.2.1 / BuddyPress 1.5
-Tested up to: WordPress 3.2.1 / BuddyPress 1.5
+Tested up to: WordPress 3.5.1 / BuddyPress 1.7.2
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/wordpress-plugins/
@@ -31,18 +31,21 @@ If you would like to install manually:
 
 1. Extract the .zip file
 2. Upload the extracted directory and all its contents to the '/wp-content/plugins/' directory
-3. Activate the plugin throught the 'Plugins' menu in WordPress
+3. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
 
 = What if the plugin doesn't work? =
 
-Hit me up on my website and let me know. I only do this in my spare time, so don't expect a super quick response :)
+Hit me up on my website (http://hardlyneutral.com) and let me know. I only do this in my spare time, so don't expect a super quick response :)
 
 == Screenshots ==
 1. Screenshot of the plugin listing three groups on the new user registration page.
 
 == Changelog ==
+
+= 0.9 =
+* Working version for the 0.9 release
 
 = 0.8 =
 * Validated plugin is compatible with BuddyPress 1.5
@@ -83,6 +86,9 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 * First version!
 
 == Upgrade Notice ==
+
+= 0.9 =
+This point release contains a major architecture update in preparation for the 1.0 release. See Changelog for details. Upgrade recommended.
 
 = 0.8 =
 This version addresses an issue with only showing 20 groups on the registration page. See Changelog for details.
