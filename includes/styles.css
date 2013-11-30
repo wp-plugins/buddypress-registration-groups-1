@@ -1,6 +1,13 @@
-.reg_groups {
+#registration-groups-section {
 	float: right;
 	width: 48%;
+}
+
+@media only screen and (max-width: 480px) {
+	#registration-groups-section {
+		float: none;
+		width: 100%;
+	}
 }
 
 .reg_groups_none {

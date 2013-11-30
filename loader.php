@@ -3,11 +3,11 @@
 /*
 Plugin Name: BuddyPress Registration Groups
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Description: WordPress/WordPress MU and BuddyPress. Allows a new user to select groups to join during the registration process.
+Description: Allows a new BuddyPress user to select groups to join during the registration process.
 Version: 0.9
-Tags: buddypress, groups, registration, autojoin
-Requires at least: WordPress 3.2.1 / BuddyPress 1.5
-Tested up to: WordPress 3.5.1 / BuddyPress 1.7.2
+Tags: wordpress, multisite, buddypress, groups, registration, autojoin
+Requires at least: WordPress 3.7.1 / BuddyPress 1.8.1
+Tested up to: WordPress 3.7.1 / BuddyPress 1.8.1
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/
@@ -32,5 +32,3 @@ function bp_registration_groups_init() {
 		require( dirname( __FILE__ ) . '/includes/bp-registration-groups.php' );
 }
 add_action( 'bp_include', 'bp_registration_groups_init' );
-
-?>
