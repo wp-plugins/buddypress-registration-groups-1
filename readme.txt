@@ -1,9 +1,9 @@
 === BuddyPress Registration Groups ===
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Version: 0.8
-Tags: buddypress, groups, registration, autojoin
-Requires at least: WordPress 3.2.1 / BuddyPress 1.5
-Tested up to: WordPress 3.2.1 / BuddyPress 1.5
+Version: 0.9
+Tags: wordpress, multisite, buddypress, groups, registration, autojoin
+Requires at least: WordPress 3.7.1 / BuddyPress 1.8.1
+Tested up to: WordPress 3.7.1 / BuddyPress 1.8.1
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/wordpress-plugins/
@@ -11,16 +11,13 @@ Contributors: hardlyneutral
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYJT5VMV8YMVQ
 Stable tag: trunk
 
-WordPress/WordPress MU and BuddyPress. Allows a new user to select groups to join during the registration process.
+Allows a new BuddyPress user to select groups to join during the registration process.
 
 == Description ==
 
 This plugin is built to display BuddyPress groups on the new user registration page in a list where the user can
-select, via checkbox, which groups they would like to join immediately. Only Public groups are shown;
-no Private or Hidden groups will be available. The selected group's IDs are stored in the following locations:
-
-* usermeta table - for WordPress/BuddyPress installations
-* meta field of signups table - for WP3/BuddyPress or WPMU/BuddyPress installations
+select, via checkbox, which groups they would like to join upon account activation. Only Public groups are shown;
+no Private or Hidden groups will be available.
 
 == Installation ==
 
@@ -31,9 +28,17 @@ If you would like to install manually:
 
 1. Extract the .zip file
 2. Upload the extracted directory and all its contents to the '/wp-content/plugins/' directory
-3. Activate the plugin throught the 'Plugins' menu in WordPress
+3. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
+
+= Does this plugin show Private or Hidden groups? =
+
+No, it does not.
+
+= Is the plugin configurable? =
+
+Not currently. I am planning to add an admin area that allows for re-ordering of groups, toggling group visibility, and more.
 
 = What if the plugin doesn't work? =
 
@@ -43,6 +48,16 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 1. Screenshot of the plugin listing three groups on the new user registration page.
 
 == Changelog ==
+
+= 0.9 =
+* Removed all trailing "?>" tags from .php files
+* Beefed up the loader a bit
+* Enqueued styles correctly
+* Added responsive styles
+* Styles are now enqueued at all times as guessing the registration template name is not guaranteed
+* Replaced deprecated function "update_usermeta" with "update_user_meta"
+* Replaced deprecated function "get_usermeta" with "get_user_meta"
+* Added a short FAQ
 
 = 0.8 =
 * Validated plugin is compatible with BuddyPress 1.5
@@ -83,6 +98,9 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 * First version!
 
 == Upgrade Notice ==
+
+= 0.9 =
+This version is a major update that replaces deprecated calls, fixes compatibility issues with the latest versions of WordPress and BuddyPress, and improves code quality. Upgrade immediately.
 
 = 0.8 =
 This version addresses an issue with only showing 20 groups on the registration page. See Changelog for details.
