@@ -3,6 +3,11 @@
 	width: 48%;
 }
 
+#registration-groups-section label {
+	display: inline;
+	font-weight: normal;
+}
+
 @media only screen and (max-width: 480px) {
 	#registration-groups-section {
 		float: none;

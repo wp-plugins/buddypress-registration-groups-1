@@ -1,6 +1,6 @@
 === BuddyPress Registration Groups ===
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Version: 0.9
+Version: 1.0
 Tags: wordpress, multisite, buddypress, groups, registration, autojoin
 Requires at least: WordPress 3.7.1 / BuddyPress 1.8.1
 Tested up to: WordPress 3.7.1 / BuddyPress 1.8.1
@@ -16,8 +16,9 @@ Allows a new BuddyPress user to select groups to join during the registration pr
 == Description ==
 
 This plugin is built to display BuddyPress groups on the new user registration page in a list where the user can
-select, via checkbox, which groups they would like to join upon account activation. Only Public groups are shown;
-no Private or Hidden groups will be available.
+select, via checkbox, which groups they would like to join upon account activation. Options are available in the
+admin area to configure the text shown on the registration page, the types of groups shown (public or public AND
+private), the order in which groups are displayed, and how many groups will be displayed.
 
 == Installation ==
 
@@ -32,22 +33,34 @@ If you would like to install manually:
 
 == Frequently Asked Questions ==
 
-= Does this plugin show Private or Hidden groups? =
+= Does this plugin show Private groups? =
 
-No, it does not.
+Yes! You can toggle private group visibility on and off in the admin section
 
-= Is the plugin configurable? =
+= Does this plugin show Hidden groups? =
 
-Not currently. I am planning to add an admin area that allows for re-ordering of groups, toggling group visibility, and more.
+No, it does not. The BuddyPress core makes it a bit difficult to easily get these groups without being a logged in user. This might change in the future. If it does, hidden groups will be supported.
 
 = What if the plugin doesn't work? =
 
-Hit me up on my website and let me know. I only do this in my spare time, so don't expect a super quick response :)
+Hit me up on my website (http://hardlyneutral.com) and let me know. I only do this in my spare time, so don't expect a super quick response :)
 
 == Screenshots ==
-1. Screenshot of the plugin listing three groups on the new user registration page.
+1. Screenshot of the plugin listing groups on the new user registration page.
+2. Screenshot of the admin settings menu and options.
 
 == Changelog ==
+
+= 1.0 =
+* Prepared echoed and printed text for localization
+* Added semantic <label> markup to the checkbox list
+* Changed the "bp_has_groups()" per_page option to use "groups_get_total_group_count()" instead of a static number
+* Added an admin settings page! Woo hoo!
+* Added the ability to change the section title that is displayed
+* Added the ability to change the description text that is displayed
+* Added the ability to display groups sorted by the same options as "bp_has_groups()": active, newest, popular, random, alphabetical, most-forum-topics, most-forum-posts
+* Added the ability to toggle the display of private groups
+* Added the ability to specify the number of groups to display
 
 = 0.9 =
 * Removed all trailing "?>" tags from .php files
@@ -99,20 +112,23 @@ Hit me up on my website and let me know. I only do this in my spare time, so don
 
 == Upgrade Notice ==
 
+= 1.0 =
+This version is a major update that adds a brand new admin section!
+
 = 0.9 =
 This version is a major update that replaces deprecated calls, fixes compatibility issues with the latest versions of WordPress and BuddyPress, and improves code quality. Upgrade immediately.
 
 = 0.8 =
 This version addresses an issue with only showing 20 groups on the registration page. See Changelog for details.
 
-= 0.3 =
-This version addresses several functionality issues. Upgrade immediately.
-
-= 0.4 =
-This version addresses a minor styling issue and an error shown on user activation if no groups were selected during registration. Upgrade immediately.
+= 0.6 =
+This version addresses an issue with group names not displaying correctly in the timeline. Upgrade immediately.
 
 = 0.5 =
 This version changes the display order of groups on the registration page to alphabetical.
 
-= 0.6 =
-This version addresses an issue with group names not displaying correctly in the timeline. Upgrade immediately.
+= 0.4 =
+This version addresses a minor styling issue and an error shown on user activation if no groups were selected during registration. Upgrade immediately.
+
+= 0.3 =
+This version addresses several functionality issues. Upgrade immediately.
