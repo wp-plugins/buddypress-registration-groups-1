@@ -4,10 +4,10 @@
 Plugin Name: BuddyPress Registration Groups
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
 Description: Allows a new BuddyPress user to select groups to join during the registration process.
-Version: 1.0
+Version: 1.0.1
 Tags: wordpress, multisite, buddypress, groups, registration, autojoin
 Requires at least: WordPress 3.7.1 / BuddyPress 1.8.1
-Tested up to: WordPress 3.7.1 / BuddyPress 1.8.1
+Tested up to: WordPress 3.8 / BuddyPress 1.9
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/

@@ -1,9 +1,9 @@
 === BuddyPress Registration Groups ===
 Plugin URI: http://hardlyneutral.com/wordpress-plugins/
-Version: 1.0
+Version: 1.0.1
 Tags: wordpress, multisite, buddypress, groups, registration, autojoin
 Requires at least: WordPress 3.7.1 / BuddyPress 1.8.1
-Tested up to: WordPress 3.7.1 / BuddyPress 1.8.1
+Tested up to: WordPress 3.8 / BuddyPress 1.9
 License: GNU/GPL 2
 Author: Eric Johnson
 Author URI: http://hardlyneutral.com/wordpress-plugins/
@@ -50,6 +50,9 @@ Hit me up on my website (http://hardlyneutral.com) and let me know. I only do th
 2. Screenshot of the admin settings menu and options.
 
 == Changelog ==
+
+= 1.0.1 =
+* Tested plugin as functional with WordPress 3.8 and BuddyPress 1.9
 
 = 1.0 =
 * Prepared echoed and printed text for localization
@@ -111,6 +114,9 @@ Hit me up on my website (http://hardlyneutral.com) and let me know. I only do th
 * First version!
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Tested plugin as functional with WordPress 3.8 and BuddyPress 1.9. Safe to upgrade.
 
 = 1.0 =
 This version is a major update that adds a brand new admin section!
