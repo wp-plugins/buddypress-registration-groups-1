@@ -1,12 +1,12 @@
 === BuddyPress Registration Groups ===
-Plugin URI: http://hardlyneutral.com/wordpress-plugins/
+Plugin URI: https://wordpress.org/plugins/buddypress-registration-groups-1/
 Version: 1.0.2
 Tags: wordpress, multisite, buddypress, groups, registration, autojoin
 Requires at least: WordPress 3.7.1 / BuddyPress 1.8.1
 Tested up to: WordPress 4.1.1 / BuddyPress 2.2.2.1
 License: GNU/GPL 2
 Author: Eric Johnson
-Author URI: https://profiles.wordpress.org/hardlyneutral
+Author URI: http://hardlyneutral.com/
 Contributors: hardlyneutral
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYJT5VMV8YMVQ
 Stable tag: trunk
